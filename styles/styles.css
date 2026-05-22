@@ -33,12 +33,13 @@ main img {
 
 /* aside: width, margin, border, padding, background-color, and color */
 aside {
-    width: 300px;
-    margin: 1px;
+    width: 20rem;
+    margin: 1rem;
     border: 1px solid #5d4a4a;
-    padding: 2px;
+    padding: 1rem;
     background-color: #f0f3f5;
     color: #2c3e50;
+    text-align: center;
 }
 
 /* aside img: width: 200px and height: auto */
