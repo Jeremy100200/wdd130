@@ -1,0 +1,267 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+     background-color: #fef9f0;
+     color: #1e2f2f;
+     line-height: 1.5;
+ }
+
+ /* header styling with logo + nav (wireframe alignment) */
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background: #0b3b3f;
+     padding: 1rem 2rem;
+     flex-wrap: wrap;
+     gap: 1rem;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ }
+
+ .logo-container {
+     display: flex;
+     align-items: center;
+     gap: 0.75rem;
+ }
+
+ .logo-svg {
+     width: 58px;
+     height: 58px;
+     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+ }
+
+ .logo-text {
+     font-size: 1.5rem;
+     font-weight: 700;
+     color: #ffdd99;
+     letter-spacing: 1px;
+ }
+
+ /* navigation bar */
+ nav {
+     display: flex;
+     gap: 1.8rem;
+     flex-wrap: wrap;
+ }
+
+ nav a {
+     color: #f5e7d9;
+     text-decoration: none;
+     font-weight: 600;
+     font-size: 1.1rem;
+     transition: all 0.2s ease;
+     padding: 0.4rem 0;
+     border-bottom: 2px solid transparent;
+ }
+
+ nav a:hover {
+     color: #fccf7c;
+     border-bottom-color: #fccf7c;
+ }
+
+ /* active page indicator (about) */
+ nav a[href="about.html"] {
+     color: #ffdd99;
+     border-bottom-color: #ffae42;
+ }
+
+ /* main layout */
+ main {
+     max-width: 1300px;
+     margin: 0 auto;
+     padding: 0 0 2rem 0;
+ }
+
+ /* HERO DIV with background image as absolute img */
+ .hero {
+     position: relative;
+     min-height: 550px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     color: white;
+     margin-bottom: 2.5rem;
+     overflow: hidden;
+     border-radius: 0 0 28px 28px;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+
+ .hero-img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     z-index: 0;
+     filter: brightness(0.65) contrast(1.05);
+ }
+
+ /* text overlay inside hero */
+ .hero h1,
+ .hero article {
+     position: relative;
+     z-index: 2;
+     background: rgba(8, 38, 41, 0.65);
+     backdrop-filter: blur(1px);
+     border-radius: 28px;
+     padding: 1.2rem 2rem;
+     margin: 0.75rem 2rem;
+     max-width: 85%;
+ }
+
+ .hero h1 {
+     font-size: 3rem;
+     font-weight: 800;
+     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+     letter-spacing: 1px;
+     margin-top: 1rem;
+ }
+
+ /* article inside hero (happy client image + mission) */
+ .hero article {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     gap: 2rem;
+     background: rgba(0, 0, 0, 0.6);
+     backdrop-filter: blur(3px);
+     margin-bottom: 2rem;
+     border: 1px solid rgba(255, 215, 150, 0.3);
+ }
+
+ .hero-avatar {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     object-fit: cover;
+     border: 3px solid #ffcf8a;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+ }
+
+ .hero article p {
+     font-size: 1.2rem;
+     max-width: 600px;
+     text-align: left;
+     font-weight: 500;
+     line-height: 1.5;
+ }
+
+ /* history section styling */
+ .history-section {
+     background: #f4ede4;
+     margin: 2rem 1.5rem;
+     padding: 2rem 2rem;
+     border-radius: 32px;
+     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+     transition: 0.2s;
+ }
+
+ .history-section h2 {
+     font-size: 2.2rem;
+     color: #0e4b4f;
+     border-left: 8px solid #f39c12;
+     padding-left: 1rem;
+     margin-bottom: 1.5rem;
+     font-weight: 700;
+ }
+
+ .history-section p {
+     font-size: 1.1rem;
+     color: #2c3e2f;
+     line-height: 1.6;
+     text-align: justify;
+ }
+
+ /* adventure section (empty content for now, as per spec) */
+ .adventure-section {
+     background: #e7dfd3;
+     margin: 2rem 1.5rem 3rem 1.5rem;
+     padding: 2rem 2rem;
+     border-radius: 32px;
+     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+     text-align: center;
+ }
+
+ .adventure-section h2 {
+     font-size: 2rem;
+     color: #115e5e;
+     margin-bottom: 1rem;
+     font-weight: 700;
+     letter-spacing: 1px;
+ }
+
+ /* empty state placeholder note (just for demonstration, not required but shows future images) */
+ .adventure-empty-message {
+     font-size: 1rem;
+     color: #5f6a5c;
+     background: #faf3e8;
+     display: inline-block;
+     padding: 0.8rem 1.8rem;
+     border-radius: 60px;
+     font-style: italic;
+ }
+
+ /* footer styling */
+ footer {
+     background: #0b3b3f;
+     color: #ffefcf;
+     text-align: center;
+     padding: 1.8rem;
+     font-size: 0.9rem;
+     margin-top: 2rem;
+     border-top-left-radius: 24px;
+     border-top-right-radius: 24px;
+ }
+
+ footer p {
+     margin: 0.3rem 0;
+ }
+
+ /* responsive adjustments */
+ @media (max-width: 800px) {
+     header {
+         flex-direction: column;
+         text-align: center;
+     }
+
+     .hero h1 {
+         font-size: 2rem;
+     }
+
+     .hero article {
+         flex-direction: column;
+         text-align: center;
+     }
+
+     .hero article p {
+         text-align: center;
+     }
+
+     nav {
+         justify-content: center;
+     }
+
+     .history-section h2,
+     .adventure-section h2 {
+         font-size: 1.8rem;
+     }
+ }
+
+ @media (max-width: 550px) {}
+
+ .hero h1 {
+     font-size: 1.7rem;
+ }
+
+ .hero article p {
+     font-size: 1rem;
+ }
