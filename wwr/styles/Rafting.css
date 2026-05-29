@@ -77,6 +77,32 @@
      padding: 0 0 2rem 0;
  }
 
+ /* Style the main header section */
+ .site-header {
+     background-color: #ffffff;
+     /* Sets header background color */
+     padding: 15px 30px;
+     /* Adds space inside the header */
+     display: flex;
+     /* Uses Flexbox for easy alignment */
+     align-items: center;
+     /* Centers the logo vertically */
+ }
+
+ /* Style the div container holding the logo */
+ .logo-container {
+     display: inline-block;
+     /* Keeps the container tight around the link */
+ }
+
+ /* Style the logo image itself */
+ .logo-image {
+     height: 60px;
+     /* Sets a fixed height for consistency */
+     width: auto;
+     /* Prevents the image from distorting */
+ }
+
  /* HERO DIV with background image as absolute img */
  .hero {
      position: relative;
