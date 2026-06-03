@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+header,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 .grid {
     display: grid;
     align-items: center;
@@ -33,7 +39,7 @@ h1 {
 }
 
 main {
-    max-width: 640px;
+
     grid-column: 2/3;
     margin: 1rem;
 }
