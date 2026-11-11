@@ -101,7 +101,7 @@ h2 {
 
 }
 
-article {
+.hero article {
     position: absolute;
     top: 70%;
     width: 115%;
