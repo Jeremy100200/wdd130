@@ -111,7 +111,7 @@ h1 {
 
 h2 {
 
-    position: left;
+    position: relative;
     width: 840px;
     padding: 0px;
     text-align: center;
