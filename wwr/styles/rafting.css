@@ -87,7 +87,6 @@ article {
     padding-bottom: 4px;
     opacity: 0.9;
     background-color: var(--accent1-color);
-    border-top: 4px solid var(--secondary-color);
     text-align: left;
     color: #fff;
 }
