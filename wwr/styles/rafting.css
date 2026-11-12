@@ -3,7 +3,7 @@
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
-    --heading-font: "Times New Roma", "Georgia", serif;
+    --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, helvetica, sans-serif;
 
 }
@@ -48,7 +48,7 @@ article {
 .socialmedia {
     display: flex;
     gap: 10px;
-    justify-content: left;
+    justify-content: flex-start;
     padding: 20px;
 
 }
@@ -82,12 +82,12 @@ article {
 .hero article {
     position: absolute;
     top: 70%;
-    width: 115%;
+    width: 100%;
     padding-top: 5px;
     padding-bottom: 4px;
     opacity: 0.9;
     background-color: var(--accent1-color);
-    border-top: var(--secondary-color);
+    border-top: 4px solid var(--secondary-color);
     text-align: left;
     color: #fff;
 }
